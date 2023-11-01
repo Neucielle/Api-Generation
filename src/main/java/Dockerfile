@@ -11,6 +11,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 
-COPY --from=build /target/QuickMaster-1.0.0.jar demo.jar
+COPY --from=build /target/Api-Generation-1.0.0.jar generation.jar
 
-ENTRYPOINT [ "java", "-jar", "demo.jar" ]
+ENTRYPOINT [ "java", "-jar", "generation.jar" ]
